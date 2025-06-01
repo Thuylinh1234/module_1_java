@@ -1,5 +1,24 @@
 package bai_tap_1;
 
+/**
+ * Tìm a, i, j biết:
+ * a.    int i = 1, j = 1;
+ * int a = i++ + j++;
+ * b.    int i = 1, j = 1;
+ * int a = i++ + ++j;
+ * c.    int i = 1, j = 1;
+ * int a = ++i + j++;
+ * d.    int i = 1, j = 1;
+ * a = ++i + ++j;
+ * e.    int i = 1, j = 1;
+ * int a = i++ + j++ + i++ + j++;
+ * f.    int i = 1, j = 1;
+ * int a = ++i + ++j + i++ + j++;
+ * g.    int i = 1;
+ * int a = i++ + ++i - i-- - --i;
+ * h.    int a = 10;
+ * a += a++ + ++a;
+ */
 public class TimBien {
     public static void main(String[] args) {
         int i = 1;
