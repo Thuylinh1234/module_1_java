@@ -14,7 +14,6 @@ public class TinhTuoi {
         int namSinh = sc.nextInt();
 
         System.out.println("Tuoi cua ban la: " + (Year.now().getValue() - namSinh));
-
     }
 }
 // Ctrl + alt + L : Format Code

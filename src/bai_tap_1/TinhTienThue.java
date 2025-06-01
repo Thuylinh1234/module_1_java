@@ -24,7 +24,7 @@ public class TinhTienThue {
         Double thueVat = tinhTong * 0.1;
 
         System.out.println("Tên sản phẩm: " + tenSanPham);
-        System.out.println("Tổng tiền sản phẩm: " + tinhTong );
+        System.out.println("Tổng tiền sản phẩm: " + tinhTong);
         System.out.println("Thuế VAT: " + thueVat);
     }
 }

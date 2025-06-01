@@ -16,10 +16,10 @@ public class ToanCoBan {
         System.out.print("Nhâp số b: ");
         int b = sc.nextInt();
 
-        System.out.println("Tổng của 2 số  : "+  (a+b));
-        System.out.println("Hiệu của 2 số   : " + (a-b));
-        System.out.println("Tích của 2 số   : " + (a*b));
-        System.out.println("Thương của 2 số  : " + (double) a/b );
+        System.out.println("Tổng của 2 số  : " + (a + b));
+        System.out.println("Hiệu của 2 số   : " + (a - b));
+        System.out.println("Tích của 2 số   : " + (a * b));
+        System.out.println("Thương của 2 số  : " + (double) a / b);
 
     }
 }
