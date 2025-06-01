@@ -27,7 +27,7 @@ public class DiemTrungBinh {
         System.out.print("Nhập hệ số Hoa: ");
         Double heSoHoa = sc.nextDouble();
 
-        Double Dtb = (diemToan * heSoToan + diemLy *heSoLy + diemHoa * heSoHoa) / (heSoHoa + heSoLy + heSoToan);
-        System.out.println("Điểm trung bình học sinh: " + Dtb);
+        Double dtb = (diemToan * heSoToan + diemLy *heSoLy + diemHoa * heSoHoa) / (heSoHoa + heSoLy + heSoToan);
+        System.out.println("Điểm trung bình học sinh: " + dtb);
     }
 }
