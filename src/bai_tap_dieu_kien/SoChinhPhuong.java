@@ -15,9 +15,9 @@ public class SoChinhPhuong {
 
         double chinhPhuong = Math.sqrt(x);
         if (chinhPhuong % 1 == 0) {
-            System.out.printf(x + " là số chính phương");
+            System.out.printf(x + "là số chính phương");
         } else {
-            System.out.println(x + " Không phải là số chính phương");
+            System.out.println(x + "Không phải là số chính phương");
         }
 
 
