@@ -35,7 +35,6 @@ public class XacDinhSoNgayTrongThang {
                 thangNam = 31;
                 break;
         }
-
         System.out.printf("Số ngày trong tháng %d năm %d là %d ngày ", thang, nam, thangNam);
 
     }

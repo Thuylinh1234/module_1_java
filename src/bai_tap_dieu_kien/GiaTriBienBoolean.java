@@ -15,3 +15,4 @@ public class GiaTriBienBoolean {
         System.out.println("D: " + d);
     }
 }
+// Boolean có thể chứa null còn boolean ko thể chứa null

@@ -22,7 +22,7 @@ public class TinhLuong {
         System.out.print("Nhập thâm niên công tác: ");
         int tnct = sc.nextInt();
 
-        double luongCanBan = 650000;
+        final double luongCanBan = 650000; // ko được phéo thay đổi
 
         double heSoLuong;
         if (tnct < 12) {

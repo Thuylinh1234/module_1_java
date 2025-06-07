@@ -32,11 +32,11 @@ public class DoiChu {
             }
         }
 
-                if (kyTu >= 'a' && kyTu <= 'z') {
-                    kyTu = (char) (kyTu - 32);
-                } else {
-                    kyTu = (char) (kyTu + 32);
-                }
+        if (kyTu >= 'a' && kyTu <= 'z') {
+            kyTu = (char) (kyTu - 32);
+        } else {
+            kyTu = (char) (kyTu + 32);
+        }
 
         System.out.println("Ký tự sau khi đã đổi: " + kyTu);
     }
