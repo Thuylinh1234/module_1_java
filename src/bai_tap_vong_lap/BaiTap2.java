@@ -12,7 +12,7 @@ public class BaiTap2 {
         System.out.print("Nhập N:");
         int n = sc.nextInt();
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) { // i += 2
             if (i % 2 != 0) {
                 System.out.print(i + "\t");
             }

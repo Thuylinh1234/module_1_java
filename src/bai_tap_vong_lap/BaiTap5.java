@@ -11,7 +11,8 @@ public class BaiTap5 {
 
         System.out.print("Nhập N: ");
         int n = sc.nextInt();
-        for (int i = 2; i <= n; i += 2) {
+
+        for (int i = 2; i <= 2*n; i += 2) {
             System.out.print(i + " ");
         }
     }
