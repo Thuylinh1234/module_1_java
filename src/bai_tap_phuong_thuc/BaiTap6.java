@@ -8,13 +8,14 @@ Viết chương trình nhập thông tin của một nhân viên trong công
 Sau khi nhập xong thì in thông tin đã nhập ra.
  */
 public class BaiTap6 {
-    static  String hoTen;
-    static  int tuoi;
-    static  String gioiTinh;
-    static double mucLuongCoBan;
-    static  double diemTrungBinh;
 
-    public static void nhap(){
+    static String hoTen;
+    static int tuoi;
+    static String gioiTinh;
+    static double mucLuongCoBan;
+    static double diemTrungBinh;
+
+    public static void nhap() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Nhập thông tin nhân viên: ");
@@ -41,7 +42,7 @@ public class BaiTap6 {
         }
     }
 
-    public  static void xuat(){
+    public static void xuat() {
         System.out.println("Họ Tên: " + hoTen);
         System.out.println("Tuổi: " + tuoi);
         System.out.println("Giới tính: " + gioiTinh);

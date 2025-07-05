@@ -53,22 +53,24 @@ public class BaiTap3 {
         }
         return sum4;
     }
-  public  static  int inputPositive(String target){
-      Scanner sc = new Scanner(System.in);
-      int n;
-      do {
-          System.out.printf("Nhập vào số nguyên dương: %s: ", target);
-          n = sc.nextInt();
-          if (n < 0){
-              System.out.printf("%s không phải là số nguyên dương, xin vui lòng nhập lại! \n ", target);
-          }
-      } while (n <= 0);
-      return  n;
-  }
+
+    public static int inputPositive(String target) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        do {
+            System.out.printf("Nhập vào số nguyên dương: %s: ", target);
+            n = sc.nextInt();
+            if (n < 0) {
+                System.out.printf("%s không phải là số nguyên dương, xin vui lòng nhập lại! \n ", target);
+            }
+        } while (n <= 0);
+        return n;
+    }
+
     public static void main(String[] args) {
 
         int n = inputPositive("n");
-        System.out.println("n = "+ n);
+        System.out.println("n = " + n);
 
         System.out.printf(" S = 1 + 2 + … + %d = %d\n", n, sum(n));
         System.out.printf(" S = 1^2 + 2^2 + … + %d^2 = %.2f\n", n, sum1(n));

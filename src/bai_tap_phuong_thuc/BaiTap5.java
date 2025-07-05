@@ -7,12 +7,12 @@ Phương thức in ra n phần tử của dãy Fibonacy.
  */
 public class BaiTap5 {
 
-    public  static void fibonacy(int n){
+    public static void fibonacy(int n) {
         int f1 = 0;
         int f2 = 1;
         int fn = 1;
 
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             System.out.print(fn + "\t");
             f1 = f2;
             f2 = fn;
@@ -20,6 +20,7 @@ public class BaiTap5 {
             fn = f1 + f2;
         }
     }
+
     public static int inputPositive(String target) {
         Scanner sc = new Scanner(System.in);
         int n;
@@ -36,7 +37,7 @@ public class BaiTap5 {
     public static void main(String[] args) {
 
         int n = inputPositive("n");
-        System.out.println("n = "+ n);
+        System.out.println("n = " + n);
 
         System.out.printf("%d phần tử của Fibonacy: ", n);
         fibonacy(n);

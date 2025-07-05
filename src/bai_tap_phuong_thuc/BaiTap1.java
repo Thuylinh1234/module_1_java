@@ -4,21 +4,22 @@ import java.util.Scanner;
 
 /**
  * Bài tập chương câu lệnh điều kiện và rẽ nhánh
- *     a.    Viết phương thức đổi một ký tự hoa sang ký tự thường.
- *     b.    Viết phương thức giải phương trình bậc nhất.
- *     c.    Viết phương thức giải phương trình bậc hai.
- *     d.    Viết phương thức trả về giá trị nhỏ nhất của 4 số nguyên.
+ * a.    Viết phương thức đổi một ký tự hoa sang ký tự thường.
+ * b.    Viết phương thức giải phương trình bậc nhất.
+ * c.    Viết phương thức giải phương trình bậc hai.
+ * d.    Viết phương thức trả về giá trị nhỏ nhất của 4 số nguyên.
  */
 public class BaiTap1 {
 
-//--------------Cau a -------------------------//
+    //--------------Cau a -------------------------//
     public static char toLowerCase(char c) {
         if (c >= 'A' && c <= 'Z') {
-            return (char)(c + 32);
+            return (char) (c + 32);
         }
         return c;
     }
-//-------------Cau b --------------------------//
+
+    //-------------Cau b --------------------------//
     public static void levelOne(double a, double b) {
         if (a == 0) {
             if (b == 0) {
@@ -31,34 +32,36 @@ public class BaiTap1 {
             System.out.printf("Nghiệm của phương trình là x = %.2f\n", x);
         }
     }
-//--------------Cau c --------------------------//
-public static void levelTwo(double a, double b, double c) {
-    if (a == 0) {
-        levelOne(b, c);
-    } else {
-        double delta = b * b - 4 * a * c;
-        if (delta < 0) {
-            System.out.println("Phương trình vô nghiệm.");
-        } else if (delta == 0) {
-            double x = -b / (2 * a);
-            System.out.println("Phương trình có nghiệm kép x = " + x);
+
+    //--------------Cau c --------------------------//
+    public static void levelTwo(double a, double b, double c) {
+        if (a == 0) {
+            levelOne(b, c);
         } else {
-            double x1 = (-b + Math.sqrt(delta)) / (2 * a);
-            double x2 = (-b - Math.sqrt(delta)) / (2 * a);
-            System.out.println("Phương trình có 2 nghiệm:");
-            System.out.println("x1 = " + x1);
-            System.out.println("x2 = " + x2);
+            double delta = b * b - 4 * a * c;
+            if (delta < 0) {
+                System.out.println("Phương trình vô nghiệm.");
+            } else if (delta == 0) {
+                double x = -b / (2 * a);
+                System.out.println("Phương trình có nghiệm kép x = " + x);
+            } else {
+                double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                System.out.println("Phương trình có 2 nghiệm:");
+                System.out.println("x1 = " + x1);
+                System.out.println("x2 = " + x2);
+            }
         }
     }
-}
-//---------------Cau d ---------------------------//
-public static int min(int a, int b, int c, int d) {
-    int min = a;
-    if (b < min) min = b;
-    if (c < min) min = c;
-    if (d < min) min = d;
-    return min;
-}
+
+    //---------------Cau d ---------------------------//
+    public static int min(int a, int b, int c, int d) {
+        int min = a;
+        if (b < min) min = b;
+        if (c < min) min = c;
+        if (d < min) min = d;
+        return min;
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

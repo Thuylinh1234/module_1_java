@@ -7,7 +7,7 @@ Phương thức trả về USCLN của 2 số nguyên.
  */
 public class BaiTap4 {
 
-    public  static int UCLN(int a, int b){
+    public static int UCLN(int a, int b) {
         int min = Math.min(a, b);
         int max = Math.max(a, b);
 
@@ -24,26 +24,28 @@ public class BaiTap4 {
         return 1;
 
     }
-    public  static  int inputPositive(String target){
+
+    public static int inputPositive(String target) {
         Scanner sc = new Scanner(System.in);
         int n;
         do {
             System.out.printf("Nhập vào số nguyên dương: %s: ", target);
             n = sc.nextInt();
-            if (n < 0){
+            if (n < 0) {
                 System.out.printf("%s không phải là số nguyên dương, xin vui lòng nhập lại! \n ", target);
             }
         } while (n <= 0);
-        return  n;
+        return n;
     }
+
     public static void main(String[] args) {
 
         int a = inputPositive("a");
         int b = inputPositive("b");
 
-        System.out.println("a = "+ a);
-        System.out.println("b = "+ b);
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
 
-        System.out.printf("Ước chung của 2 số %d và %d là: %d", a,b, UCLN(a,b));
+        System.out.printf("Ước chung của 2 số %d và %d là: %d", a, b, UCLN(a, b));
     }
 }

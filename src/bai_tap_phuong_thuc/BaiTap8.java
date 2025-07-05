@@ -229,13 +229,13 @@ public class BaiTap8 {
         System.out.println("Muốn tiếp tục thì nhập 'Yes', Dừng lại thì nhập 'No' ");
         String yKien = sc.nextLine();
 
-        if (yKien.equalsIgnoreCase("Yes")){
+        if (yKien.equalsIgnoreCase("Yes")) {
             System.out.println("Nhập thông tin nhân viên 2: ");
             nhap1();
 
             System.out.println("Muốn tiếp tục thì nhập 'Yes', Dừng lại thì nhập 'No' ");
             yKien = sc.nextLine();
-            if (yKien.equalsIgnoreCase("Yes")){
+            if (yKien.equalsIgnoreCase("Yes")) {
                 System.out.println("Nhập thông tin nhân viên 2: ");
                 nhap1();
 
