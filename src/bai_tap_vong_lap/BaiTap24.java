@@ -20,36 +20,90 @@ public class BaiTap24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Nhập dữ liệu
-        System.out.print("Nhập giá món đồ (VNĐ): ");
-        int giaMonDo = sc.nextInt();
-        System.out.print("Nhập số tiền khách trả (VNĐ): ");
-        int tienKhachTra = sc.nextInt();
+        int giaTien;
+        do {
+            System.out.print("Nhập giá tiền món đồ khách mua: ");
+            giaTien = sc.nextInt();
+            if (giaTien <= 0) {
+                System.out.println("Bạn nhập sai vui lòng nhập lại");
+            }
+        } while (giaTien <= 0);
 
-        int tienThoiLai = tienKhachTra - giaMonDo;
+        int tienKhachTra ;
+        do {
+            System.out.print("Nhập số tiền khách trả:");
+            tienKhachTra  = sc.nextInt();
+            if (giaTien <= 0) {
+                System.out.println("Bạn nhập sai vui lòng nhập lại");
+            }
+        } while (tienKhachTra <= 0);
 
-        if (tienThoiLai < 0) {
-            System.out.println("Khách trả chưa đủ tiền!");
+        int tienThoi = tienKhachTra - giaTien;
+
+        if (tienThoi < 0) {
+            System.out.println("Khách trả chưa đủ tiền.");
+            return;
+        } else if (tienThoi == 0) {
+            System.out.println("Khách đã trả đủ, không cần thối.");
             return;
         }
 
-        System.out.println("Tiền cần thối lại: " + tienThoiLai + " VNĐ");
+        System.out.println("Cần thối lại: " + tienThoi + "đ");
 
-        int[] menhGia = {500000, 200000, 100000, 50000, 20000, 10000, 5000, 2000, 1000};
+        int soTo;
 
-        for (int tien : menhGia) {
-            if (tienThoiLai >= tien) {
-                int soTo = tienThoiLai / tien;
-                System.out.printf("%d tờ %dđ\n", soTo, tien);
-                tienThoiLai %= tien;
-            }
+        if (tienThoi >= 500000) {
+            soTo = tienThoi / 500000;
+            System.out.println(soTo + " tờ 500000đ");
+            tienThoi %= 500000;
         }
 
-        if (tienThoiLai > 0) {
-            System.out.println("Số tiền không thối được do không có mệnh giá phù hợp: " + tienThoiLai + " VNĐ");
-        } else {
-            System.out.println("Đã thối đủ tiền cho khách");
+        if (tienThoi >= 200000) {
+            soTo = tienThoi / 200000;
+            System.out.println(soTo + " tờ 200000đ");
+            tienThoi %= 200000;
+        }
+
+        if (tienThoi >= 100000) {
+            soTo = tienThoi / 100000;
+            System.out.println(soTo + " tờ 100000đ");
+            tienThoi %= 100000;
+        }
+
+        if (tienThoi >= 50000) {
+            soTo = tienThoi / 50000;
+            System.out.println(soTo + " tờ 50000đ");
+            tienThoi %= 50000;
+        }
+
+        if (tienThoi >= 20000) {
+            soTo = tienThoi / 20000;
+            System.out.println(soTo + " tờ 20000đ");
+            tienThoi %= 20000;
+        }
+
+        if (tienThoi >= 10000) {
+            soTo = tienThoi / 10000;
+            System.out.println(soTo + " tờ 10000đ");
+            tienThoi %= 10000;
+        }
+
+        if (tienThoi >= 5000) {
+            soTo = tienThoi / 5000;
+            System.out.println(soTo + " tờ 5000đ");
+            tienThoi %= 5000;
+        }
+
+        if (tienThoi >= 2000) {
+            soTo = tienThoi / 2000;
+            System.out.println(soTo + " tờ 2000đ");
+            tienThoi %= 2000;
+        }
+
+        if (tienThoi >= 1000) {
+            soTo = tienThoi / 1000;
+            System.out.println(soTo + " tờ 1000đ");
+            tienThoi %= 1000;
         }
     }
 }
-

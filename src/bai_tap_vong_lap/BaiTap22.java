@@ -1,7 +1,10 @@
 package bai_tap_vong_lap;
 
 import java.util.Scanner;
-
+/*
+Nhập vào 2 số nguyên dương a & b với điều kiện là b > a.
+ Hãy thực hiện đếm và tính tổng trong đoạn[a, b] có bao nhiêu số đối xứng, chính phương, nguyên tố
+ */
 public class BaiTap22 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,12 +13,18 @@ public class BaiTap22 {
         do {
             System.out.print("Nhập số nguyên dương a: ");
             a = sc.nextInt();
+            if (a <= 0) {
+                System.out.println("Bạn nhập sai vui lòng nhập lại");
+            }
         } while (a <= 0);
 
         int b;
         do {
             System.out.print("Nhập số nguyên dương b (b > a): ");
             b = sc.nextInt();
+            if (b <= 0) {
+                System.out.println("Bạn nhập sai vui lòng nhập lại");
+            }
         } while (b <= a);
 
         int demDoiXung = 0, tongDoiXung = 0;
@@ -37,7 +46,7 @@ public class BaiTap22 {
             }
         }
 
-        System.out.println("Số đối xứng: " + demDoiXung + " - Tổng: " + tongDoiXung);
+        System.out.printf("Số đối xứng: " + demDoiXung + " - Tổng: " + tongDoiXung);
         System.out.println("Số chính phương: " + demChinhPhuong + " - Tổng: " + tongChinhPhuong);
         System.out.println("Số nguyên tố: " + demNguyenTo + " - Tổng: " + tongNguyenTo);
 
