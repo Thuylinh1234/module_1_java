@@ -1,5 +1,15 @@
 package bai_tap_date;
-
+/*
+a. Chuyển chuỗi "02/28/2023" sang kiểu java.util.Date.
+    b. Chuyển ngày hiện tại (của hệ thống) đang ở kiểu java.util.Date sang kiểu String theo đinh dạng dd/MM/yyyy và hiển thị ra màn hình.
+    c. Chuyển chuỗi "02/28/2023" sang kiểu LocalDate.
+    d. Chuyển ngày hiện tại (của hệ thống) đang ở kiểu LocalDate sang kiểu String theo đinh dạng dd/MM/yyyy và hiển thị ra màn hình.
+    e. Lấy ngày, tháng, năm, giờ, phút, giây hiện tại của hệ thống.
+    f. Hãy cho biết 1 tháng sau (tính từ ngày hiện tại) sẽ rơi vào thứ mấy trong tuần, và cách ngày hiện tại bao nhiêu ngày?
+        Gợi ý: nếu ngày hiện tại là ngày 26/6 thì 1 tháng sau được hiểu là ngày 26/7 (giữ nguyên ngày, tăng 1 tháng).
+    g. Hãy cho biết cách đây 1000 ngày (tính từ ngày hiện tại) là ngày tháng năm nào?
+    h. Hãy nhập vào 2 String có định dạng là dd/MM/yyyy. Hãy chuyển thành 2 biến kiểu LocalDate. Sau đó hãy tính số ngày chênh lệch giữa 2 ngày đã nhập vào.
+ */
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
