@@ -1,5 +1,15 @@
 package bai_tap_date;
-
+/*
+ a. Cho các ví dụ về ép kiểu mà độ chính xác không bị thay đổi, như thứ tự bên dưới:
+        byte⤍short⤍int⤍long⤍float⤍double
+    b. Cho các ví dụ về ép kiểu mà độ chính xác không bị thay đổi, như thứ tự bên dưới:
+        double⤍float⤍long⤍int⤍short⤍byte
+    c. Cho các ví dụ về ép kiểu mà độ chính xác bị thay đổi, như thứ tự bên dưới:
+        double⤍float⤍long⤍int⤍short⤍byte
+    d. Phân biệt ép kiểu tường minh và ép kiểu ngầm định
+    e. Khi nào cần dùng các ký tự L, F, D… sau các số nguyên, số thực trong Java?
+    Khi nào thì không cần dùng đến các ký tự này mà Java vẫn tự hiểu được các số thuộc kiểu dữ liệu gì?
+ */
 public class BaiTap3 {
     public static void main(String[] args) {
         System.out.println("Câu a: ");
