@@ -45,20 +45,6 @@ public class BaiTap2 {
             xuatThongTin(i);
         }
 
-        // a. Tìm điểm trung bình cao nhất
-        System.out.println("\na. Nhân viên có điểm trung bình cao nhất: ");
-        timNhanVienDiemCaoNhat();
-
-        // b. Tìm theo họ tên chính xác
-        System.out.print("\nb. Nhập họ tên để tìm chính xác: ");
-        String tenChinhXac = sc.nextLine();
-        timTheoHoTen(tenChinhXac);
-
-        // c. Tìm gần đúng
-        System.out.print("\nc. Nhập từ khóa để tìm gần đúng: ");
-        String tuKhoa = sc.nextLine();
-        timGanDung(tuKhoa);
-
     }
 
     public static void nhapThongTin(int index, Scanner sc) {
@@ -95,49 +81,5 @@ public class BaiTap2 {
         System.out.println("Giới tính: " + gioiTinh[index]);
         System.out.println("Lương cơ bản: " + mucLuong[index]);
         System.out.println("Điểm trung bình tốt nghiệp: " + diemTrungBinh[index]);
-    }
-
-    // a. Tìm nhân viên có điểm cao nhất
-    public static void timNhanVienDiemCaoNhat() {
-        double max = diemTrungBinh[0];
-        for (int i = 1; i < soLuongNhanVien; i++) {
-            if (diemTrungBinh[i] > max) {
-                max = diemTrungBinh[i];
-            }
-        }
-
-        for (int i = 0; i < soLuongNhanVien; i++) {
-            if (diemTrungBinh[i] == max) {
-                xuatThongTin(i);
-            }
-        }
-    }
-
-    // b. Tìm theo họ tên (chính xác)
-    public static void timTheoHoTen(String ten) {
-        boolean timThay = false;
-        for (int i = 0; i < soLuongNhanVien; i++) {
-            if (hoTen[i].equalsIgnoreCase(ten)) {
-                xuatThongTin(i);
-                timThay = true;
-            }
-        }
-        if (!timThay) {
-            System.out.println("Không tìm thấy nhân viên tên \"" + ten + "\"");
-        }
-    }
-
-    // c. Tìm theo tên gần đúng
-    public static void timGanDung(String tuKhoa) {
-        boolean timThay = false;
-        for (int i = 0; i < soLuongNhanVien; i++) {
-            if (hoTen[i].toLowerCase().contains(tuKhoa.toLowerCase())) {
-                xuatThongTin(i);
-                timThay = true;
-            }
-        }
-        if (!timThay) {
-            System.out.println("Không có ai chứa từ khóa \"" + tuKhoa + "\" trong họ tên.");
-        }
     }
 }
